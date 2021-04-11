@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Двадцать тысяч лье под водой</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Двадцать тысяч лье под водой</h1>
+      <div class="book_info">
+        <table>
+          <tr>
+            <td class="illustration" rowspan="7">
+              <img src="../img/Dvadcat_Tyisyach_Le_Pod_Vodoy.jpg" alt="илюстрация книги" />
+            </td>
+            <td>Год издательства:1869</td>
+          </tr>
+          <tr>
+            <td>Автор:Жюль Верн</td>
+          </tr>
+          <tr>
+            <td>Жанры:Фантастика, приключение</td>
+          </tr>
+          <tr>
+            <td>
+              <p>Роман «Двадцать тысяч лье под водой» вышел более ста лет назад, но до сих пор он влечет миллионы читателей – любителей необыкновенных путешествий. Жюль Верн увлекает захватывающим сюжетом, неожиданными, подчас опасными приключениями, неведомым миром морских глубин и очаровывает личностью таинственного и загадочного капитана Немо.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Объём:632(все страницы)</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="../books/Vern_J_Dvadcat_Tyisyach_Le_Pod_Vodoyi6682831.a6.pdf" >Просмотреть в браузере</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="../books/Vern_J_Dvadcat_Tyisyach_Le_Pod_Vodoyi6682831.a6.pdf"  download>Скачать</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      #commentSection
+        form(action="comment" id="commentForm" method="get") 
+          textarea.writecomment(name="area")
+          button(id="submit") Вывести
+          input(type="hidden", name="url" value="")
+          input(type="hidden" name="user" value="")
+          input(type="hidden" name="date" value="")
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js")
+    script(src="/scripts/comments.js")  
+  </body>
+</html>

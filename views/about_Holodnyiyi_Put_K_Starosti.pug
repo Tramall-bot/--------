@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Холодный путь к старости</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Холодный путь к старости</h1>
+      <table class="book_info">
+        <tr>
+          <td class="illustration" rowspan="7">
+            <img src="../img/Holodnyiyi_Put_K_Starosti.jpg" alt="илюстрация книги" />
+          </td>
+          <td>Год издательства:2006</td>
+        </tr>
+        <tr>
+          <td>Автор: Андрей Викторович Дробот</td>
+        </tr>
+        <tr>
+          <td>Жанры: юмор</td>
+        </tr>
+        <tr>
+          <td>
+            <p>В июле 2007 года книга "Холодный путь к старости" удостоена почетного диплома Союза журналистов России. Цитатами из книги "Холодный путь к старости" открывался международный съезд журналистов, проходивший в Дагомысе в сентябре-октябре 2007 года под эгидой Союза журналистов России. В феврале 2008 года книга "Холодный путь к старости" награждена Союзом журналистов России «Золотым пером России» на бале прессы, проходившем в Москве.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Объём:1050(все страницы)</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Drobot_A_Holodnyiyi_Put_K_Starosti.a6.pdf">Просмотреть в браузере</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Drobot_A_Holodnyiyi_Put_K_Starosti.a6.pdf" download>Скачать</a>
+          </td>
+        </tr>
+      </table>
+      #commentSection
+        form(action="comment" id="commentForm" method="get") 
+          textarea.writecomment(name="area")
+          button(id="submit") Вывести
+          input(type="hidden", name="url" value="")
+          input(type="hidden" name="user" value="")
+          input(type="hidden" name="date" value="")
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js")
+    script(src="/scripts/comments.js")  
+  </body>
+</html>

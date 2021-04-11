@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="css/styles.css")
+    title Вход
+  body
+  div.content 
+    h1 Вход в профиль
+    div.login
+      <form action = "loginUser" method = "GET">
+            label(for="") Имя: 
+            br
+            <input type = "text" name = "name">  <br>
+            label(for="") Пароль: 
+            br
+            <input type = "password" name = "password">
+            br
+            br
+            <input type = "submit" value = "Войти" id="btn">
+      </form> 
+      br
+      a(href="register") Создать профиль
+      br
+      br
+  script(src="/scripts/validlogin.js") 

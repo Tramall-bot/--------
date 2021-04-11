@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Энциклопедия Современного Искусства</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Verba Art. Энциклопедия Современного Искусства</h1>
+      <table class="book_info">
+        <tr>
+          <td class="illustration" rowspan="7">
+            <img  src="../img/Verba_Art_Yenciklopediya.jpg" alt="илюстрация книги"  />
+          </td>
+          <td>Год издательства:2020</td>
+        </tr>
+        <tr>
+          <td>Автор: Дмитрий Эдуардович Фуфаев</td>
+        </tr>
+        <tr>
+          <td>Жанры: обучающие, справочник, искусство</td>
+        </tr>
+        <tr>
+          <td>
+            <p> Энциклопедия Современного Искусства - это издание о художниках, графиках, скульпторов, фотохудожниках и тех, кто занимается прикладным искусством.В книге собраны биографии авторов, представлены их лучшие работы и указаны контактные координаты, чтобы можно было установить контакты с художником.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Объём:542(все страницы)</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Fufaev_D_Verba_Art_Yenciklopediya_.a6.pdf">Просмотреть в браузере</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Fufaev_D_Verba_Art_Yenciklopediya_.a6.pdf" download>Скачать</a>
+          </td>
+        </tr>
+      </table>
+      #commentSection
+        form(action="comment" id="commentForm" method="get") 
+          textarea.writecomment(name="area")
+          button(id="submit") Вывести
+          input(type="hidden", name="url" value="")
+          input(type="hidden" name="user" value="")
+          input(type="hidden" name="date" value="")
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js")
+    script(src="/scripts/comments.js")  
+  </body>
+</html>

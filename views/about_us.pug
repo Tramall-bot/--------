@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>О нас</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us" id="current">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>О нас</h1>
+      <div class="info">
+        <p>Веб-сайт: интернет-библиотека</p>
+        <p>Цель курсовой: разработка веб-сайта "интернет-библиотека"</p>
+        <p>Выполнил: Бурыкин Алексей МП-32-19</p>
+        <p>Обучающее учреждение: Филиал "РКТ" МАИ</p>
+        <p>Год выполнения: 2021</p>
+      </div>
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js") 
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Зеркальный вор</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Зеркальный вор</h1>
+      <table class="book_info">
+        <tr>
+          <td class="illustration" rowspan="7">
+            <img  src="../img/Martyn_Sey_Zerkalmnuy_vor.jpg"  alt="илюстрация книги" />
+          </td>
+          <td>Год издательства:2017</td>
+        </tr>
+        <tr>
+          <td>Автор: Мартин Сэй</td>
+        </tr>
+        <tr>
+          <td>Жанры: Современная проза</td>
+        </tr>
+        <tr>
+          <td>
+            <p>  Впервые на русском – один из самых ярких дебютов в американской литературе последних лет. Это мультижанровое полотно, шедшее к читателю свыше десятилетия, заслужило  сравнения с «Облачным атласом» Дэвида Митчелла и с романами Умберто Эко. «Истинное  наслаждение: подобие огромной и полной диковин кунсткамеры… – писал журнал Publishers  Weekly . – Это шедевр эпического размаха, который можно полюбить, как давно утерянного  и вновь обретенного друга». Действие «Зеркального вора» охватывает несколько стран,  континентов и столетий – и три разные Венеции: от величественных палаццо и стекольных  мастерских Венеции XVI века, где тайные агенты европейских и азиатских держав пытаются вызнать секрет производства легендарных муранских зеркал, – до баров и кофеен другой, лос-анджелесской Венеции, где поэты и писатели бит-поколения выясняют, кто из них самый гениальный, а малолетний уличный мошенник жаждет найти автора поразившей его воображение поэмы «Зеркальный вор», – до псевдовенецианских казино современного Лас-Вегаса, где отставной военный полицейский отчаянно пытается выйти на след неуловимого игрока, грозу обоих побережий…
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Объём:121(все страницы)</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Martyn_Sey_Zerkalmnuy_vor.pdf">Просмотреть в браузере</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../books/Martyn_Sey_Zerkalmnuy_vor.pdf" download>Скачать</a>
+          </td>
+        </tr>
+      </table>
+      #commentSection
+        form(action="comment" id="commentForm" method="get") 
+          textarea.writecomment(name="area")
+          button(id="submit") Вывести
+          input(type="hidden", name="url" value="")
+          input(type="hidden" name="user" value="")
+          input(type="hidden" name="date" value="")
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js")
+    script(src="/scripts/comments.js")  
+  </body>
+</html>

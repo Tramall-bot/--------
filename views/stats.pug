@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="/css/styles.css")
+    title Статистика
+  body 
+  <header>
+    form(action="" id="search-form") 
+      label(for="search") Поиск&emsp;
+      <div id="dropdown-form" class="dropdown">
+        textarea(name="search")
+        <div id="dropdown-content-form" class="dropdown-content">
+        </div>
+      </div>
+    <img class="logo" alt="logo" />
+    <nav>
+      <div class="nav"><a href="/">Главная</a></div>
+      <div class="nav"><a href="catalog">Все книги</a></div>
+      <div class="nav"><a href="genres">Все жанры</a></div>
+      <div class="nav"><a href="about_us">Кратко о нас</a></div>
+      <div class="nav"><a href="stats" id="current">Статистика</a></div>
+      <div class="nav">
+        <div id="dropdown" class="dropdown">
+          <a href=""></a>
+          <div id="dropdown-content" class="dropdown-content">
+            <a href="logout">Выйти</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  script(src="/scripts/profile.js") 
+  script(src="/scripts/stats.js") 

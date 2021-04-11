@@ -1,0 +1,384 @@
+body {
+  background-image: url(../img/bg.jpg);
+  background-color: rgba(151, 87, 3, 0.74);
+  color: #999999;
+}
+body a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.pages {
+  width: 100%;
+  margin-top: 30px;
+}
+.pages table {
+  width: 100%;
+}
+.pages p {
+  text-align: center;
+}
+#page {
+  background-color: red;
+}
+.content > :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 40px;
+  text-align: center;
+}
+header {
+  border: rgb(221, 150, 19) solid 5px;
+  border-top: none;
+  background-color: #7a5d1d;
+  margin: -8px;
+  margin-bottom: -21px;
+  display: inline-table;
+  width: 100.5%;
+}
+header img {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+header nav {
+  text-align: justify;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 60px;
+  border-top: rgb(221, 150, 19) solid 5px;
+}
+header div:last-child {
+  border-right: none;
+}
+header * a {
+  position: relative;
+  top: 30%;
+  max-width: 300px;
+  font-size: 90%;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 20px;
+}
+a#current {
+  color: #ff0000;
+}
+
+div.nav {
+  height: 60px;
+  border-right: 5px solid rgb(221, 150, 19);
+  border-left: 5px solid rgb(221, 150, 19);
+  margin-left: 0px;
+  margin-right: -8px;
+
+  display: inline-block;
+}
+div.nav:hover {
+  background-color: #0c70635e;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 90%;
+  overflow: auto;
+  margin-left: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(165, 165, 165);
+}
+.show {
+  display: block;
+}
+#current_page {
+  background-color: red;
+}
+.new {
+  border: rgb(221, 150, 19) solid 5px;
+  background-color: #7a5d1d;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.new h2 {
+  margin-left: 15%;
+}
+.book_table {
+  margin-left: -4px;
+  margin-right: -4px;
+  border: rgb(221, 150, 19) solid 5px;
+  background-color: #7a5d1d;
+}
+
+.book_table div {
+  display: inline-block;
+  margin-top: -3px;
+  margin-left: 3%;
+  margin-right: 7%;
+  width: 180px;
+}
+.display_pic {
+  width: 175px;
+  height: 250px;
+  border: rgb(221, 150, 19) solid 10px;
+}
+.popular {
+  background-color: #d2303d;
+  height: 350px;
+}
+.popular h2 {
+  margin-left: 50px;
+}
+img.logo {
+  width: 50px;
+  height: 50px;
+  content: url(../img/book_icon.jpg);
+}
+
+.about {
+  border: rgb(221, 150, 19) solid 5px;
+  border-bottom: none;
+  background-color: #7a5d1d;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+.search {
+  background-color: #d2b330;
+  height: 100px;
+  margin-bottom: -21px;
+}
+
+#search-btn {
+  height: 30px;
+}
+#search-form {
+  text-align: center;
+}
+#search-form textarea {
+  min-height: 20px;
+  min-width: 250px;
+  position: relative;
+  top: 10px;
+}
+#search-form label {
+  font-size: 2.4em;
+}
+.books {
+  margin: 40px 10px;
+}
+.book,
+.book_info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -8px;
+  margin-right: -8px;
+  border: rgb(221, 150, 19) solid 7px;
+  background-color: #7a5d1d;
+}
+.book table,
+.book_info table {
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+.book td,
+.book_info td {
+  padding-left: 30px;
+  border-bottom: rgb(221, 150, 19) solid 7px;
+}
+.book tr:last-child td,
+.book_info tr:last-child td {
+  border-bottom: none;
+}
+.book td.illustration,
+.book_info td.illustration {
+  padding: 0px;
+  border-right: rgb(221, 150, 19) solid 7px;
+}
+
+.illustration img {
+  width: 200px;
+  height: 300px;
+  margin: 5px 25px 0px;
+}
+.book_info {
+  font-size: 1.3em;
+}
+.book_info img {
+  width: 250px;
+  height: 375px;
+  margin: 5px 25px 0px;
+}
+.reviews {
+  margin-top: 50px;
+  border: 1px solid gray;
+}
+.reviews textarea {
+  width: 90%;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+}
+.review {
+  margin-left: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  width: 90%;
+}
+
+.review div {
+  margin-left: 5px;
+}
+.profile_pic {
+  width: 30px;
+  height: 30px;
+}
+.letter_filter {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: rgb(221, 150, 19) solid 7px;
+  background-color: #7a5d1d;
+}
+.letter {
+  margin-bottom: 30px;
+  border-bottom: rgb(221, 150, 19) solid 7px;
+}
+.letter h2 {
+  margin-left: 50px;
+}
+.genre {
+  width: 100px;
+  margin: 30px;
+  display: inline-block;
+}
+
+.latest,
+.mounthly {
+  margin: 50px 20px;
+}
+.latest h3,
+.mounthly h3 {
+  margin-left: 50px;
+}
+
+.popular_recent,
+.popular_all_time {
+  margin: 50px 20px;
+}
+.popular_recent h3,
+.popular_all_time h3 {
+  margin-left: 50px;
+}
+.info {
+  border: rgb(221, 150, 19) solid 7px;
+  background-color: #7a5d1d;
+}
+.info p {
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+#commentSection {
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+textarea.writecomment {
+  width: 70%;
+  margin: 30px 10px -25px 5%;
+  height: 60px;
+}
+button#submit {
+  height: 60px;
+  width: 80px;
+}
+.commentWrapper {
+  width: 90%;
+  margin: 50px 5% 50px 5%;
+  border: rgb(221, 150, 19) solid 2px;
+  background-color: #443412;
+}
+.commentWrapper div {
+  margin-bottom: 10px;
+  margin-left: 2%;
+  font-size: 1.1em;
+}
+.commentWrapper div:first-child {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.stats {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 1.3em;
+}
+.stats td.illustration {
+  border-right: none;
+}
+.stats td:last-child {
+  width: 100%;
+  text-align: center;
+}
+.stats table {
+  width: 100%;
+}
+.login,
+.register {
+  margin-left: 30%;
+  text-align: center;
+  width: 40%;
+  border: rgb(122, 122, 122) solid 1px;
+  background-color: rgb(133, 93, 9);
+}
+.login form,
+.register form {
+  margin-top: 4%;
+}
+.login input,
+.register input {
+  margin-bottom: 3%;
+}
+.login label,
+.register label {
+  margin-left: -20%;
+}
+.login label:first-of-type,
+.register label:first-of-type {
+  margin-left: -25%;
+}
+.login #btn {
+  font-size: 1.1em;
+  height: 30px;
+  width: 70px;
+}
+.register #btn {
+  font-size: 1.1em;
+  height: 30px;
+  width: 90px;
+}

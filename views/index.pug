@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Главная страница</title>
+    <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      form(action="" id="search-form") 
+        label(for="search") Поиск&emsp;
+        <div id="dropdown-form" class="dropdown">
+          textarea(name="search")
+          <div id="dropdown-content-form" class="dropdown-content">
+          </div>
+          button(type="submit" id="search-btn") Найти
+        </div>
+      <img class="logo" alt="logo" />
+      <nav>
+        <div class="nav"><a href="/" id="current">Главная</a></div>
+        <div class="nav"><a href="catalog">Все книги</a></div>
+        <div class="nav"><a href="genres">Все жанры</a></div>
+        <div class="nav"><a href="about_us">Кратко о нас</a></div>
+        <div class="nav"><a href="stats">Статистика</a></div>
+        <div class="nav">
+          <div id="dropdown" class="dropdown">
+            <a href=""></a>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="logout">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Интернет-Библеотека</h1>
+      <div class="new">
+        <h2><a href="books_new">Новинки</a></h2>
+        <div class="book_table">
+          
+        </div>
+      </div>
+    </div>
+    script(src="/scripts/profile.js" module)
+    script(src="/scripts/search.js")
+    script(src="/scripts/newBooksIndex.js") 
+  </body>
+</html>

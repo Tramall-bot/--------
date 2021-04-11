@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="/css/styles.css")
+    title Регистрация
+  body 
+  div.content
+    h1 Создание профиля
+    div.register
+      <form action = "registerUser" method = "GET">
+            label(for="") Имя: 
+              br
+              <input type = "text" name = "name">  <br>
+              label(for="") Пароль: 
+              br
+              <input type = "password" name = "password">
+              br
+              br
+            <input type = "submit" value = "Создать" id="btn">
+      </form> 
+      script(src="/scripts/validRegister.js") 

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="/css/styles.css")
+    title Document
+  body
+  div.content 
+    h1 test
+    #commentSection
+          form(action="comment" id="commentForm" method="get") 
+            textarea.writecomment(name="area")
+            button(id="submit") Вывести
+            input(type="hidden", name="url" value="")
+            input(type="hidden" name="user" value="")
+            input(type="hidden" name="date" value="")
+  script(src="/scripts/comments.js")  
